@@ -1,430 +1,367 @@
-<div align="center">
-
-![project hero](https://github.com/invoke-ai/InvokeAI/assets/31807370/1a917d94-e099-4fa1-a70f-7dd8d0691018)
-
-# Invoke AI - Generative AI for Professional Creatives
-## Professional Creative Tools for Stable Diffusion, Custom-Trained Models, and more. 
-  To learn more about Invoke AI, get started instantly, or implement our Business solutions, visit [invoke.ai](https://invoke.ai)
-
-
-[![discord badge]][discord link]
-
-[![latest release badge]][latest release link] [![github stars badge]][github stars link] [![github forks badge]][github forks link]
-
-[![CI checks on main badge]][CI checks on main link] [![latest commit to main badge]][latest commit to main link]
-
-[![github open issues badge]][github open issues link] [![github open prs badge]][github open prs link] [![translation status badge]][translation status link]
-
-[CI checks on main badge]: https://flat.badgen.net/github/checks/invoke-ai/InvokeAI/main?label=CI%20status%20on%20main&cache=900&icon=github
-[CI checks on main link]:https://github.com/invoke-ai/InvokeAI/actions?query=branch%3Amain
-[discord badge]: https://flat.badgen.net/discord/members/ZmtBAhwWhy?icon=discord
-[discord link]: https://discord.gg/ZmtBAhwWhy
-[github forks badge]: https://flat.badgen.net/github/forks/invoke-ai/InvokeAI?icon=github
-[github forks link]: https://useful-forks.github.io/?repo=invoke-ai%2FInvokeAI
-[github open issues badge]: https://flat.badgen.net/github/open-issues/invoke-ai/InvokeAI?icon=github
-[github open issues link]: https://github.com/invoke-ai/InvokeAI/issues?q=is%3Aissue+is%3Aopen
-[github open prs badge]: https://flat.badgen.net/github/open-prs/invoke-ai/InvokeAI?icon=github
-[github open prs link]: https://github.com/invoke-ai/InvokeAI/pulls?q=is%3Apr+is%3Aopen
-[github stars badge]: https://flat.badgen.net/github/stars/invoke-ai/InvokeAI?icon=github
-[github stars link]: https://github.com/invoke-ai/InvokeAI/stargazers
-[latest commit to main badge]: https://flat.badgen.net/github/last-commit/invoke-ai/InvokeAI/main?icon=github&color=yellow&label=last%20dev%20commit&cache=900
-[latest commit to main link]: https://github.com/invoke-ai/InvokeAI/commits/main
-[latest release badge]: https://flat.badgen.net/github/release/invoke-ai/InvokeAI/development?icon=github
-[latest release link]: https://github.com/invoke-ai/InvokeAI/releases
-[translation status badge]: https://hosted.weblate.org/widgets/invokeai/-/svg-badge.svg
-[translation status link]: https://hosted.weblate.org/engage/invokeai/
-
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto">
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/31807370/294221310-6e3728c7-e90e-4711-905c-3b55844ff5be.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU0NjY4NTAsIm5iZiI6MTcwNTQ2NjU1MCwicGF0aCI6Ii8zMTgwNzM3MC8yOTQyMjEzMTAtNmUzNzI4YzctZTkwZS00NzExLTkwNWMtM2I1NTg0NGZmNWJlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTE3VDA0NDIzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYyZWUzMGJiNTQ3NWYxNTJlYjNlZjQxNWUxZjg3NmM1NDcyMDVhY2QzODJjZjRjNGEyNTMzMDQ1MTk5MjA5MzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.hkfbBBYaI89SSYVmcC3fv2wFsTyRAT1856JPP9pwyPU"><img src="https://private-user-images.githubusercontent.com/31807370/294221310-6e3728c7-e90e-4711-905c-3b55844ff5be.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU0NjY4NTAsIm5iZiI6MTcwNTQ2NjU1MCwicGF0aCI6Ii8zMTgwNzM3MC8yOTQyMjEzMTAtNmUzNzI4YzctZTkwZS00NzExLTkwNWMtM2I1NTg0NGZmNWJlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTE3VDA0NDIzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYyZWUzMGJiNTQ3NWYxNTJlYjNlZjQxNWUxZjg3NmM1NDcyMDVhY2QzODJjZjRjNGEyNTMzMDQ1MTk5MjA5MzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.hkfbBBYaI89SSYVmcC3fv2wFsTyRAT1856JPP9pwyPU" alt="项目英雄" style="max-width: 100%;"></a></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-invoke---professional-creative-ai-tools-for-visual-media" class="anchor" aria-hidden="true" tabindex="-1" href="#invoke---professional-creative-ai-tools-for-visual-media"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Invoke - 专业视觉媒体创意人工智能工具</font></font></h1>
+<h2 tabindex="-1" dir="auto"><a id="user-content-to-learn-more-about-invoke-or-implement-our-business-solutions-visit-invokecom" class="anchor" aria-hidden="true" tabindex="-1" href="#to-learn-more-about-invoke-or-implement-our-business-solutions-visit-invokecom"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要了解有关 Invoke 的更多信息或实施我们的业务解决方案，请访问</font></font><a href="https://www.invoke.com/about" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">invoke.com</font></font></a></h2>
+<p dir="auto"><a href="https://discord.gg/ZmtBAhwWhy" rel="nofollow"><img src="https://camo.githubusercontent.com/9c7a7327cbe252952da5e2a09d84dbe732c90d0dcc557b46a78c56a7fbca3c2d/68747470733a2f2f666c61742e62616467656e2e6e65742f646973636f72642f6d656d626572732f5a6d74424168775768793f69636f6e3d646973636f7264" alt="不和谐徽章" data-canonical-src="https://flat.badgen.net/discord/members/ZmtBAhwWhy?icon=discord" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/invoke-ai/InvokeAI/releases"><img src="https://camo.githubusercontent.com/3e26d574d4e95f53cc31d3d6cb8a7dff50a94380a3267671c6e3aeef05ea0277/68747470733a2f2f666c61742e62616467656e2e6e65742f6769746875622f72656c656173652f696e766f6b652d61692f496e766f6b6541492f646576656c6f706d656e743f69636f6e3d676974687562" alt="最新版本徽章" data-canonical-src="https://flat.badgen.net/github/release/invoke-ai/InvokeAI/development?icon=github" style="max-width: 100%;"></a> <a href="https://github.com/invoke-ai/InvokeAI/stargazers"><img src="https://camo.githubusercontent.com/88ccd1ca04618d40dae9c2fcc1048dbf58b3bcaa0ad4b945d9b563802a7ac5bd/68747470733a2f2f666c61742e62616467656e2e6e65742f6769746875622f73746172732f696e766f6b652d61692f496e766f6b6541493f69636f6e3d676974687562" alt="github 星星徽章" data-canonical-src="https://flat.badgen.net/github/stars/invoke-ai/InvokeAI?icon=github" style="max-width: 100%;"></a> <a href="https://useful-forks.github.io/?repo=invoke-ai%2FInvokeAI" rel="nofollow"><img src="https://camo.githubusercontent.com/9ff39d4f6497ebad4e4d42151c65bb234296eb9f8e567364117046612fa1780e/68747470733a2f2f666c61742e62616467656e2e6e65742f6769746875622f666f726b732f696e766f6b652d61692f496e766f6b6541493f69636f6e3d676974687562" alt="github forks 徽章" data-canonical-src="https://flat.badgen.net/github/forks/invoke-ai/InvokeAI?icon=github" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/invoke-ai/InvokeAI/actions?query=branch%3Amain"><img src="https://camo.githubusercontent.com/72a65b61f637a7e21b7b7eda4997808028d5e6b53d2d3cbac000e177f8f365e9/68747470733a2f2f666c61742e62616467656e2e6e65742f6769746875622f636865636b732f696e766f6b652d61692f496e766f6b6541492f6d61696e3f6c6162656c3d43492532307374617475732532306f6e2532306d61696e2663616368653d3930302669636f6e3d676974687562" alt="CI 检查主徽章" data-canonical-src="https://flat.badgen.net/github/checks/invoke-ai/InvokeAI/main?label=CI%20status%20on%20main&amp;cache=900&amp;icon=github" style="max-width: 100%;"></a> <a href="https://github.com/invoke-ai/InvokeAI/commits/main"><img src="https://camo.githubusercontent.com/a7a925265b941d58303ee7800bdb18f040776da587e3885b9e84cf56b917e02d/68747470733a2f2f666c61742e62616467656e2e6e65742f6769746875622f6c6173742d636f6d6d69742f696e766f6b652d61692f496e766f6b6541492f6d61696e3f69636f6e3d67697468756226636f6c6f723d79656c6c6f77266c6162656c3d6c617374253230646576253230636f6d6d69742663616368653d393030" alt="对主徽章的最新承诺" data-canonical-src="https://flat.badgen.net/github/last-commit/invoke-ai/InvokeAI/main?icon=github&amp;color=yellow&amp;label=last%20dev%20commit&amp;cache=900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/invoke-ai/InvokeAI/issues?q=is%3Aissue+is%3Aopen"><img src="https://camo.githubusercontent.com/c6511e2b7513b484746016b270ef4a485f925af10b7c930da5dad0129daaf4af/68747470733a2f2f666c61742e62616467656e2e6e65742f6769746875622f6f70656e2d6973737565732f696e766f6b652d61692f496e766f6b6541493f69636f6e3d676974687562" alt="github 开放问题徽章" data-canonical-src="https://flat.badgen.net/github/open-issues/invoke-ai/InvokeAI?icon=github" style="max-width: 100%;"></a> <a href="https://github.com/invoke-ai/InvokeAI/pulls?q=is%3Apr+is%3Aopen"><img src="https://camo.githubusercontent.com/1b717378a9b987dac3f7938a91df281ab3469d5a04aa560629d81a2c999ebd79/68747470733a2f2f666c61742e62616467656e2e6e65742f6769746875622f6f70656e2d7072732f696e766f6b652d61692f496e766f6b6541493f69636f6e3d676974687562" alt="github 开放 prs 徽章" data-canonical-src="https://flat.badgen.net/github/open-prs/invoke-ai/InvokeAI?icon=github" style="max-width: 100%;"></a> <a href="https://hosted.weblate.org/engage/invokeai/" rel="nofollow"><img src="https://camo.githubusercontent.com/0984eb86221f09c9a86d4508dde676b0a35a6bc10bad19c2871402b253b9d0ca/68747470733a2f2f686f737465642e7765626c6174652e6f72672f776964676574732f696e766f6b6561692f2d2f7376672d62616467652e737667" alt="翻译状态徽章" data-canonical-src="https://hosted.weblate.org/widgets/invokeai/-/svg-badge.svg" style="max-width: 100%;"></a></p>
 </div>
-
-InvokeAI is a leading creative engine built to empower professionals
-and enthusiasts alike. Generate and create stunning visual media using
-the latest AI-driven technologies. InvokeAI offers an industry leading
-Web Interface, interactive Command Line Interface, and also serves as
-the foundation for multiple commercial products.
-
-**Quick links**: [[How to
-  Install](https://invoke-ai.github.io/InvokeAI/#installation)] [<a
-  href="https://discord.gg/ZmtBAhwWhy">Discord Server</a>] [<a
-  href="https://invoke-ai.github.io/InvokeAI/">Documentation and
-  Tutorials</a>] [<a
-  href="https://github.com/invoke-ai/InvokeAI/">Code and
-  Downloads</a>] [<a
-  href="https://github.com/invoke-ai/InvokeAI/issues">Bug Reports</a>]
-  [<a
-  href="https://github.com/invoke-ai/InvokeAI/discussions">Discussion,
-  Ideas & Q&A</a>]
-
-<div align="center">
-
-![canvas preview](https://github.com/invoke-ai/InvokeAI/raw/main/docs/assets/canvas_preview.png)
-
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">InvokeAI 是一款领先的创意引擎，旨在为专业人士和爱好者提供支持。</font><font style="vertical-align: inherit;">使用最新的人工智能驱动技术生成和创建令人惊叹的视觉媒体。</font><font style="vertical-align: inherit;">InvokeAI 提供业界领先的 Web 界面、交互式命令行界面，并且还作为多个商业产品的基础。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速链接</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：[</font></font><a href="https://invoke-ai.github.io/InvokeAI/installation/INSTALLATION/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何安装</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">] [ </font></font><a href="https://discord.gg/ZmtBAhwWhy" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Discord 服务器</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">] [</font></font><a href="https://invoke-ai.github.io/InvokeAI/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档和教程</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">] [ </font></font><a href="https://github.com/invoke-ai/InvokeAI/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bug 报告</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">] [</font></font><a href="https://github.com/invoke-ai/InvokeAI/discussions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">讨论、想法和问答</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">] [</font></font><a href="https://invoke-ai.github.io/InvokeAI/contributing/CONTRIBUTING/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">]</font></font></p>
+<div align="center" dir="auto">
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/31807370/294229391-708f7a82-084f-4860-bfbe-e2588c53548d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU0NjY4NTAsIm5iZiI6MTcwNTQ2NjU1MCwicGF0aCI6Ii8zMTgwNzM3MC8yOTQyMjkzOTEtNzA4ZjdhODItMDg0Zi00ODYwLWJmYmUtZTI1ODhjNTM1NDhkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTE3VDA0NDIzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVmMGM0ZDZhZDJlODkyZTRjODA0ZGMxNDhmMDdjMzNhNTgxYmM3ZTA2YjdlZmMxODM5YjIwMmRhMDQ4MTQ0NmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ymwLu-dX3IJyXOmgQvhfSmYVAlsmIh7TXwArBVjpWuE"><img src="https://private-user-images.githubusercontent.com/31807370/294229391-708f7a82-084f-4860-bfbe-e2588c53548d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU0NjY4NTAsIm5iZiI6MTcwNTQ2NjU1MCwicGF0aCI6Ii8zMTgwNzM3MC8yOTQyMjkzOTEtNzA4ZjdhODItMDg0Zi00ODYwLWJmYmUtZTI1ODhjNTM1NDhkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTE3VDA0NDIzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVmMGM0ZDZhZDJlODkyZTRjODA0ZGMxNDhmMDdjMzNhNTgxYmM3ZTA2YjdlZmMxODM5YjIwMmRhMDQ4MTQ0NmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ymwLu-dX3IJyXOmgQvhfSmYVAlsmIh7TXwArBVjpWuE" alt="突出的功能 - 画布和工作流程" style="max-width: 100%;"></a></p>
 </div>
-
-## Table of Contents
-
-Table of Contents 📝
-
-**Getting Started**
-1. 🏁 [Quick Start](#quick-start) 
-3. 🖥️ [Hardware Requirements](#hardware-requirements) 
-
-**More About Invoke**
-1. 🌟 [Features](#features) 
-2. 📣 [Latest Changes](#latest-changes) 
-3. 🛠️ [Troubleshooting](#troubleshooting) 
-
-**Supporting the Project**
-1. 🤝 [Contributing](#contributing) 
-2. 👥 [Contributors](#contributors) 
-3. 💕 [Support](#support) 
-
-## Quick Start
-
-For full installation and upgrade instructions, please see:
-[InvokeAI Installation Overview](https://invoke-ai.github.io/InvokeAI/installation/)
-
-If upgrading from version 2.3, please read [Migrating a 2.3 root
-directory to 3.0](#migrating-to-3) first.
-
-### Automatic Installer (suggested for 1st time users)
-
-1. Go to the bottom of the [Latest Release Page](https://github.com/invoke-ai/InvokeAI/releases/latest)
-
-2. Download the .zip file for your OS (Windows/macOS/Linux).
-
-3. Unzip the file.
-
-4. **Windows:** double-click on the `install.bat` script. **macOS:** Open a Terminal window, drag the file `install.sh` from Finder
-into the Terminal, and press return. **Linux:** run `install.sh`.
-
-5. You'll be asked to confirm the location of the folder in which
-to install InvokeAI and its image generation model files. Pick a
-location with at least 15 GB of free memory. More if you plan on
-installing lots of models.
-
-6. Wait while the installer does its thing. After installing the software,
-the installer will launch a script that lets you configure InvokeAI and
-select a set of starting image generation models.
-
-7. Find the folder that InvokeAI was installed into (it is not the
-same as the unpacked zip file directory!) The default location of this
-folder (if you didn't change it in step 5) is `~/invokeai` on
-Linux/Mac systems, and `C:\Users\YourName\invokeai` on Windows. This directory will contain launcher scripts named `invoke.sh` and `invoke.bat`.
-
-8. On Windows systems, double-click on the `invoke.bat` file. On
-macOS, open a Terminal window, drag `invoke.sh` from the folder into
-the Terminal, and press return. On Linux, run `invoke.sh`
-
-9. Press 2 to open the "browser-based UI", press enter/return, wait a
-minute or two for Stable Diffusion to start up, then open your browser
-and go to http://localhost:9090.
-
-10. Type `banana sushi` in the box on the top left and click `Invoke`
-
-### Command-Line Installation (for developers and users familiar with Terminals)
-
-You must have Python 3.9 through 3.11 installed on your machine. Earlier or
-later versions are not supported.
-Node.js also needs to be installed along with yarn (can be installed with
-the command `npm install -g yarn` if needed)
-
-1. Open a command-line window on your machine. The PowerShell is recommended for Windows.
-2. Create a directory to install InvokeAI into. You'll need at least 15 GB of free space:
-
-    ```terminal
-    mkdir invokeai
-    ````
-
-3. Create a virtual environment named `.venv` inside this directory and activate it:
-
-    ```terminal
-    cd invokeai
-    python -m venv .venv --prompt InvokeAI
-    ```
-
-4. Activate the virtual environment (do it every time you run InvokeAI)
-
-    _For Linux/Mac users:_
-
-    ```sh
-    source .venv/bin/activate
-    ```
-
-    _For Windows users:_
-
-    ```ps
-    .venv\Scripts\activate
-    ```
-
-5. Install the InvokeAI module and its dependencies. Choose the command suited for your platform & GPU.
-
-    _For Windows/Linux with an NVIDIA GPU:_
-
-    ```terminal
-    pip install "InvokeAI[xformers]" --use-pep517 --extra-index-url https://download.pytorch.org/whl/cu118
-    ```
-
-    _For Linux with an AMD GPU:_
-
-    ```sh
-    pip install InvokeAI --use-pep517 --extra-index-url https://download.pytorch.org/whl/rocm5.4.2
-    ```
-
-    _For non-GPU systems:_
-    ```terminal
-    pip install InvokeAI --use-pep517 --extra-index-url https://download.pytorch.org/whl/cpu
-    ``` 
-
-    _For Macintoshes, either Intel or M1/M2:_
-
-    ```sh
-    pip install InvokeAI --use-pep517
-    ```
-
-6. Configure InvokeAI and install a starting set of image generation models (you only need to do this once):
-
-    ```terminal
-    invokeai-configure --root .
-    ```
-	Don't miss the dot at the end!
-
-7. Launch the web server (do it every time you run InvokeAI):
-
-    ```terminal
-    invokeai-web
-    ```
-
-8. Point your browser to http://localhost:9090 to bring up the web interface.
-
-9. Type `banana sushi` in the box on the top left and click `Invoke`.
-
-Be sure to activate the virtual environment each time before re-launching InvokeAI,
-using `source .venv/bin/activate` or `.venv\Scripts\activate`.
-
-## Detailed Installation Instructions
-
-This fork is supported across Linux, Windows and Macintosh. Linux
-users can use either an Nvidia-based card (with CUDA support) or an
-AMD card (using the ROCm driver). For full installation and upgrade
-instructions, please see:
-[InvokeAI Installation Overview](https://invoke-ai.github.io/InvokeAI/installation/INSTALL_SOURCE/)
-
-<a name="migrating-to-3"></a>
-### Migrating a v2.3 InvokeAI root directory
-
-The InvokeAI root directory is where the InvokeAI startup file,
-installed models, and generated images are stored. It is ordinarily
-named `invokeai` and located in your home directory. The contents and
-layout of this directory has changed between versions 2.3 and 3.0 and
-cannot be used directly.
-
-We currently recommend that you use the installer to create a new root
-directory named differently from the 2.3 one, e.g. `invokeai-3` and
-then use a migration script to copy your 2.3 models into the new
-location. However, if you choose, you can upgrade this directory in
-place.  This section gives both recipes.
-
-#### Creating a new root directory and migrating old models
-
-This is the safer recipe because it leaves your old root directory in
-place to fall back on.
-
-1. Follow the instructions above to create and install InvokeAI in a
-directory that has a different name from the 2.3 invokeai directory.
-In this example, we will use "invokeai-3"
-
-2. When you are prompted to select models to install, select a minimal
-set of models, such as stable-diffusion-v1.5 only.
-
-3. After installation is complete launch `invokeai.sh` (Linux/Mac) or
-`invokeai.bat` and select option 8 "Open the developers console". This
-will take you to the command line.
-
-4. Issue the command `invokeai-migrate3 --from /path/to/v2.3-root --to
-/path/to/invokeai-3-root`. Provide the correct `--from` and `--to`
-paths for your v2.3 and v3.0 root directories respectively.
-
-This will copy and convert your old models from 2.3 format to 3.0
-format and create a new `models` directory in the 3.0 directory. The
-old models directory (which contains the models selected at install
-time) will be renamed `models.orig` and can be deleted once you have
-confirmed that the migration was successful.
-
- If you wish, you can pass the 2.3 root directory to both `--from` and
-`--to` in order to update in place. Warning: this directory will no
-longer be usable with InvokeAI 2.3.
-
-#### Migrating in place
-
-For the adventurous, you may do an in-place upgrade from 2.3 to 3.0
-without touching the command line. ***This recipe does not work on
-Windows platforms due to a bug in the Windows version of the 2.3
-upgrade script.** See the next section for a Windows recipe.
-
-##### For Mac and Linux Users:
-
-1. Launch the InvokeAI launcher script in your current v2.3 root directory.
-
-2. Select option [9] "Update InvokeAI" to bring up the updater dialog.
-
-3. Select option [1] to upgrade to the latest release.
-
-4. Once the upgrade is finished you will be returned to the launcher
-menu. Select option [7] "Re-run the configure script to fix a broken
-install or to complete a major upgrade".
-
-This will run the configure script against the v2.3 directory and
-update it to the 3.0 format. The following files will be replaced:
-
-  - The invokeai.init file, replaced by invokeai.yaml
-  - The models directory
-  - The configs/models.yaml model index
-  
-The original versions of these files will be saved with the suffix
-".orig" appended to the end. Once you have confirmed that the upgrade
-worked, you can safely remove these files. Alternatively you can
-restore a working v2.3 directory by removing the new files and
-restoring the ".orig" files' original names.
-
-##### For Windows Users:
-
-Windows Users can upgrade with the
-
-1. Enter the 2.3 root directory you wish to upgrade
-2. Launch `invoke.sh` or `invoke.bat`
-3. Select the "Developer's console" option [8]
-4. Type the following commands
-
-```
-pip install "invokeai @ https://github.com/invoke-ai/InvokeAI/archive/refs/tags/v3.0.0" --use-pep517 --upgrade
+<h2 tabindex="-1" dir="auto"><a id="user-content-table-of-contents" class="anchor" aria-hidden="true" tabindex="-1" href="#table-of-contents"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录📝</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></strong></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🏁</font></font><a href="#quick-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速入门</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🖥️</font></font><a href="#hardware-requirements"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">硬件要求</font></font></a></li>
+</ol>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于调用的更多信息</font></font></strong></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🌟</font></font><a href="#features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特点</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📣</font></font><a href="#latest-changes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最新变化</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🛠️</font></font><a href="#troubleshooting"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">故障排除</font></font></a></li>
+</ol>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持项目</font></font></strong></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤝</font></font><a href="#contributing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👥</font></font><a href="#contributors"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💕</font></font><a href="#support"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持</font></font></a></li>
+</ol>
+<h2 tabindex="-1" dir="auto"><a id="user-content-quick-start" class="anchor" aria-hidden="true" tabindex="-1" href="#quick-start"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完整的安装和升级说明，请参阅：
+ </font></font><a href="https://invoke-ai.github.io/InvokeAI/installation/INSTALLATION/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">InvokeAI 安装概述</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果从2.3版本升级，请先阅读</font></font><a href="#migrating-to-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将2.3根目录迁移到3.0</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-automatic-installer-suggested-for-1st-time-users" class="anchor" aria-hidden="true" tabindex="-1" href="#automatic-installer-suggested-for-1st-time-users"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自动安装程序（建议第一次用户使用）</font></font></h3>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://github.com/invoke-ai/InvokeAI/releases/latest"><font style="vertical-align: inherit;">转到最新版本页面</font></a><font style="vertical-align: inherit;">底部</font></font><a href="https://github.com/invoke-ai/InvokeAI/releases/latest"><font style="vertical-align: inherit;"></font></a></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载适用于您的操作系统 (Windows/macOS/Linux) 的 .zip 文件。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">解压缩文件。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Windows：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">双击脚本</font></font><code>install.bat</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">macOS：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开终端窗口，将文件</font></font><code>install.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从 Finder 拖到终端中，然后按 Return 键。</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行</font></font><code>install.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">系统会要求您确认安装 InvokeAI 及其图像生成模型文件的文件夹位置。</font><font style="vertical-align: inherit;">选择一个至少有 15 GB 可用内存的位置。</font><font style="vertical-align: inherit;">如果您计划安装大量模型，则需要更多。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等待安装程序执行其操作。</font><font style="vertical-align: inherit;">安装软件后，安装程序将启动一个脚本，让您配置 InvokeAI 并选择一组起始图像生成模型。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到安装 InvokeAI 的文件夹（它与解压后的 zip 文件目录不同！）此文件夹的默认位置（如果您没有在第 5 步中更改它）在</font></font><code>~/invokeai</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux/Mac 系统上，</font></font><code>C:\Users\YourName\invokeai</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Windows 上。</font><font style="vertical-align: inherit;">该目录将包含名为</font></font><code>invoke.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和的启动器脚本</font></font><code>invoke.bat</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Windows 系统上，双击该</font></font><code>invoke.bat</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件。</font><font style="vertical-align: inherit;">在 macOS 上，打开终端窗口，</font></font><code>invoke.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从文件夹拖到终端中，然后按回车键。</font><font style="vertical-align: inherit;">在 Linux 上，运行</font></font><code>invoke.sh</code></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按 2 打开“基于浏览器的 UI”，按 Enter/Return，等待一两分钟让 Stable Diffusion 启动，然后打开浏览器并转到</font></font><a href="http://localhost:9090" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:9090</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"></font><code>banana sushi</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在左上角的框中输入</font><font style="vertical-align: inherit;">内容，然后单击</font></font><code>Invoke</code></p>
+</li>
+</ol>
+<h3 tabindex="-1" dir="auto"><a id="user-content-command-line-installation-for-developers-and-users-familiar-with-terminals" class="anchor" aria-hidden="true" tabindex="-1" href="#command-line-installation-for-developers-and-users-familiar-with-terminals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">命令行安装（适用于熟悉终端的开发人员和用户）</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的计算机上必须安装 Python 3.10 到 3.11。</font><font style="vertical-align: inherit;">不支持早期或更高版本。</font><font style="vertical-align: inherit;">Node.js也需要一起安装（</font><font style="vertical-align: inherit;">需要的</font></font><code>pnpm</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">话可以用命令安装）</font></font><code>npm install -g pnpm</code><font style="vertical-align: inherit;"></font></p>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您的计算机上打开命令行窗口。</font><font style="vertical-align: inherit;">建议在 Windows 上使用 PowerShell。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个目录来安装 InvokeAI。</font><font style="vertical-align: inherit;">您需要至少 15 GB 的可用空间：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre lang="terminal" class="notranslate"><code>mkdir invokeai
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mkdir invokeai" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个</font></font><code>.venv</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此目录中命名的虚拟环境并激活它：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre lang="terminal" class="notranslate"><code>cd invokeai
+python -m venv .venv --prompt InvokeAI
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="cd invokeai
+python -m venv .venv --prompt InvokeAI" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">激活虚拟环境（每次运行InvokeAI时都执行此操作）</font></font></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 Linux/Mac 用户：</font></font></em></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c1">source</span> .venv/bin/activate</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="source .venv/bin/activate" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 Windows 用户：</font></font></em></p>
+<div class="highlight highlight-source-postscript notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-smi">.venv\Scripts\activate</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=".venv\Scripts\activate" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 InvokeAI 模块及其依赖项。</font><font style="vertical-align: inherit;">选择适合您的平台和 GPU 的命令。</font></font></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于配备 NVIDIA GPU 的 Windows/Linux：</font></font></em></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre lang="terminal" class="notranslate"><code>pip install "InvokeAI[xformers]" --use-pep517 --extra-index-url https://download.pytorch.org/whl/cu121
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install &quot;InvokeAI[xformers]&quot; --use-pep517 --extra-index-url https://download.pytorch.org/whl/cu121" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于配备 AMD GPU 的 Linux：</font></font></em></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>pip install InvokeAI --use-pep517 --extra-index-url https://download.pytorch.org/whl/rocm5.4.2</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install InvokeAI --use-pep517 --extra-index-url https://download.pytorch.org/whl/rocm5.4.2" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于非 GPU 系统：</font></font></em></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre lang="terminal" class="notranslate"><code>pip install InvokeAI --use-pep517 --extra-index-url https://download.pytorch.org/whl/cpu
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install InvokeAI --use-pep517 --extra-index-url https://download.pytorch.org/whl/cpu" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 Macintoshes，Intel 或 M1/M2/M3：</font></font></em></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>pip install InvokeAI --use-pep517</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install InvokeAI --use-pep517" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置 InvokeAI 并安装一组起始图像生成模型（您只需执行一次）：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre lang="terminal" class="notranslate"><code>invokeai-configure --root .
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="invokeai-configure --root ." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不要错过最后的点！</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动 Web 服务器（每次运行 InvokeAI 时执行此操作）：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre lang="terminal" class="notranslate"><code>invokeai-web
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="invokeai-web" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将浏览器指向</font></font><a href="http://localhost:9090" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:9090</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以打开 Web 界面。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"></font><code>banana sushi</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在左上角的框中</font><font style="vertical-align: inherit;">输入内容并单击</font></font><code>Invoke</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+</ol>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请务必在每次重新启动 InvokeAI 之前使用</font></font><code>source .venv/bin/activate</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或激活虚拟环境</font></font><code>.venv\Scripts\activate</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-detailed-installation-instructions" class="anchor" aria-hidden="true" tabindex="-1" href="#detailed-installation-instructions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">详细安装说明</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux、Windows 和 Macintosh 均支持该分支。</font><font style="vertical-align: inherit;">Linux 用户可以使用基于 Nvidia 的卡（支持 CUDA）或 AMD 卡（使用 ROCm 驱动程序）。</font><font style="vertical-align: inherit;">完整的安装和升级说明，请参阅：
+ </font></font><a href="https://invoke-ai.github.io/InvokeAI/installation/INSTALL_SOURCE/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">InvokeAI 安装概述</font></font></a></p>
+<p dir="auto"><a name="user-content-migrating-to-3"></a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-migrating-a-v23-invokeai-root-directory" class="anchor" aria-hidden="true" tabindex="-1" href="#migrating-a-v23-invokeai-root-directory"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迁移 v2.3 InvokeAI 根目录</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">InvokeAI根目录是InvokeAI启动文件、安装的模型和生成的镜像的存放位置。</font><font style="vertical-align: inherit;">它通常被命名</font></font><code>invokeai</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并位于您的主目录中。</font><font style="vertical-align: inherit;">该目录的内容和布局在2.3和3.0版本之间发生了变化，不能直接使用。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目前，我们建议您使用安装程序创建一个与 2.3 名称不同的新根目录，例如</font></font><code>invokeai-3</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，然后使用迁移脚本将 2.3 模型复制到新位置。</font><font style="vertical-align: inherit;">但是，如果您选择，可以就地升级此目录。</font><font style="vertical-align: inherit;">本节提供了这两种食谱。</font></font></p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-creating-a-new-root-directory-and-migrating-old-models" class="anchor" aria-hidden="true" tabindex="-1" href="#creating-a-new-root-directory-and-migrating-old-models"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建新的根目录并迁移旧模型</font></font></h4>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是更安全的方法，因为它保留了旧的根目录以供依赖。</font></font></p>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按照上面的说明在与 2.3 invokeai 目录具有不同名称的目录中创建并安装 InvokeAI。</font><font style="vertical-align: inherit;">在此示例中，我们将使用“invokeai-3”</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当系统提示您选择要安装的模型时，请选择最小的模型集，例如仅 stable-diffusion-v1.5。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装完成后启动</font></font><code>invokeai.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Linux/Mac) 或
+</font></font><code>invokeai.bat</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择选项 8“打开开发人员控制台”。</font><font style="vertical-align: inherit;">这将带您进入命令行。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发出命令</font></font><code>invokeai-migrate3 --from /path/to/v2.3-root --to /path/to/invokeai-3-root</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">分别提供</font><font style="vertical-align: inherit;">
+v2.3 和 v3.0 根目录的正确路径</font></font><code>--from</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><code>--to</code><font style="vertical-align: inherit;"></font></p>
+</li>
+</ol>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这会将旧模型从 2.3 格式复制并转换为 3.0 格式，并</font></font><code>models</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 3.0 目录中创建一个新目录。</font><font style="vertical-align: inherit;">旧模型目录（包含安装时选择的模型）将被重命名</font></font><code>models.orig</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，并且在确认迁移成功后可以删除。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您愿意，您可以将 2.3 根目录传递给</font></font><code>--from</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和
+</font></font><code>--to</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以便就地更新。</font><font style="vertical-align: inherit;">警告：此目录将不再可用于 InvokeAI 2.3。</font></font></p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-migrating-in-place" class="anchor" aria-hidden="true" tabindex="-1" href="#migrating-in-place"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迁移到位</font></font></h4>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于喜欢冒险的人，您可以从 2.3 就地升级到 3.0，而无需接触命令行。</font><font style="vertical-align: inherit;">*</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由于 Windows 版本的 2.3 升级脚本中存在错误，此秘籍不适用于 Windows 平台。</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关 Windows 秘诀，请参阅下一节。</font></font></p>
+<h5 tabindex="-1" dir="auto"><a id="user-content-for-mac-and-linux-users" class="anchor" aria-hidden="true" tabindex="-1" href="#for-mac-and-linux-users"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 Mac 和 Linux 用户：</font></font></h5>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在当前 v2.3 根目录中启动 InvokeAI 启动器脚本。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择选项 [9]“Update InvokeAI”以显示更新程序对话框。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择选项 [1] 升级到最新版本。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升级完成后，您将返回到启动器菜单。</font><font style="vertical-align: inherit;">选择选项 [6]“重新运行配置脚本以修复损坏的安装或完成主要升级”。</font></font></p>
+</li>
+</ol>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这将针对 v2.3 目录运行配置脚本并将其更新为 3.0 格式。</font><font style="vertical-align: inherit;">以下文件将被替换：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">invokeai.init 文件，替换为 invokeai.yaml</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模型目录</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">configs/models.yaml 模型索引</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些文件的原始版本将在末尾添加后缀“.orig”进行保存。</font><font style="vertical-align: inherit;">一旦确认升级有效，您就可以安全地删除这些文件。</font><font style="vertical-align: inherit;">或者，您可以通过删除新文件并恢复“.orig”文件的原始名称来恢复工作 v2.3 目录。</font></font></p>
+<h5 tabindex="-1" dir="auto"><a id="user-content-for-windows-users" class="anchor" aria-hidden="true" tabindex="-1" href="#for-windows-users"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 Windows 用户：</font></font></h5>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Windows 用户可以通过以下方式进行升级</font></font></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入您要升级的2.3根目录</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动</font></font><code>invoke.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>invoke.bat</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择“开发者控制台”选项 [8]</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">键入以下命令</font></font></li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>pip install "invokeai @ https://github.com/invoke-ai/InvokeAI/archive/refs/tags/v3.0.0" --use-pep517 --upgrade
 invokeai-configure --root .
-```
-(Replace `v3.0.0` with the current release number if this document is out of date).
-
-The first command will install and upgrade new software to run
-InvokeAI. The second will prepare the 2.3 directory for use with 3.0.
-You may now launch the WebUI in the usual way, by selecting option [1]
-from the launcher script
-
-#### Migrating Images
-
-The migration script will migrate your invokeai settings and models,
-including textual inversion models, LoRAs and merges that you may have
-installed previously. However it does **not** migrate the generated
-images stored in your 2.3-format outputs directory. To do this, you 
-need to run an additional step:
-
-1. From a working InvokeAI 3.0 root directory, start the launcher and
-enter menu option [8] to open the "developer's console".
-
-2. At the developer's console command line, type the command:
-
-```bash
-invokeai-import-images
-```
-
-3. This will lead you through the process of confirming the desired
-   source and destination for the imported images. The images will
-   appear in the gallery board of your choice, and contain the
-   original prompt, model name, and other parameters used to generate
-   the image.
-   
-(Many kudos to **techjedi** for contributing this script.)
-
-## Hardware Requirements
-
-InvokeAI is supported across Linux, Windows and macOS. Linux
-users can use either an Nvidia-based card (with CUDA support) or an
-AMD card (using the ROCm driver).
-
-### System
-
-You will need one of the following:
-
-- An NVIDIA-based graphics card with 4 GB or more VRAM memory. 6-8 GB
-  of VRAM is highly recommended for rendering using the Stable
-  Diffusion XL models
-- An Apple computer with an M1 chip.
-- An AMD-based graphics card with 4GB or more VRAM memory (Linux
-  only), 6-8 GB for XL rendering.
-
-We do not recommend the GTX 1650 or 1660 series video cards. They are
-unable to run in half-precision mode and do not have sufficient VRAM
-to render 512x512 images.
-
-**Memory** - At least 12 GB Main Memory RAM.
-
-**Disk** - At least 12 GB of free disk space for the machine learning model, Python, and all its dependencies.
-
-## Features
-
-Feature documentation can be reviewed by navigating to [the InvokeAI Documentation page](https://invoke-ai.github.io/InvokeAI/features/)
-
-### *Web Server & UI*
-
-InvokeAI offers a locally hosted Web Server & React Frontend, with an industry leading user experience. The Web-based UI allows for simple and intuitive workflows, and is responsive for use on mobile devices and tablets accessing the web server.
-
-### *Unified Canvas*
-
-The Unified Canvas is a fully integrated canvas implementation with support for all core generation capabilities, in/outpainting, brush tools, and more. This creative tool unlocks the capability for artists to create with AI as a creative collaborator, and can be used to augment AI-generated imagery, sketches, photography, renders, and more.
-
-### *Node Architecture & Editor (Beta)*
-
-Invoke AI's backend is built on a graph-based execution architecture. This allows for customizable generation pipelines to be developed by professional users looking to create specific workflows to support their production use-cases, and will be extended in the future with additional capabilities.
-
-### *Board & Gallery Management*
-
-Invoke AI provides an organized gallery system for easily storing, accessing, and remixing your content in the Invoke workspace. Images can be dragged/dropped onto any Image-base UI element in the application, and rich metadata within the Image allows for easy recall of key prompts or settings used in your workflow. 
-
-### Other features
-
-- *Support for both ckpt and diffusers models*
-- *SD 2.0, 2.1, XL support*
-- *Upscaling Tools*
-- *Embedding Manager & Support*
-- *Model Manager & Support*
-- *Node-Based Architecture*
-- *Node-Based Plug-&-Play UI (Beta)*
-
-### Latest Changes
-
-For our latest changes, view our [Release
-Notes](https://github.com/invoke-ai/InvokeAI/releases) and the
-[CHANGELOG](docs/CHANGELOG.md).
-
-### Troubleshooting
-
-Please check out our **[Q&A](https://invoke-ai.github.io/InvokeAI/help/TROUBLESHOOT/#faq)** to get solutions for common installation
-problems and other issues.
-
-## Contributing
-
-Anyone who wishes to contribute to this project, whether documentation, features, bug fixes, code
-cleanup, testing, or code reviews, is very much encouraged to do so.
-
-To join, just raise your hand on the InvokeAI Discord server (#dev-chat) or the GitHub discussion board.
-
-If you'd like to help with translation, please see our [translation guide](docs/other/TRANSLATION.md).
-
-If you are unfamiliar with how
-to contribute to GitHub projects, here is a
-[Getting Started Guide](https://opensource.com/article/19/7/create-pull-request-github). A full set of contribution guidelines, along with templates, are in progress. You can **make your pull request against the "main" branch**.
-
-We hope you enjoy using our software as much as we enjoy creating it,
-and we hope that some of those of you who are reading this will elect
-to become part of our community.
-
-Welcome to InvokeAI!
-
-### Contributors
-
-This fork is a combined effort of various people from across the world.
-[Check out the list of all these amazing people](https://invoke-ai.github.io/InvokeAI/other/CONTRIBUTORS/). We thank them for
-their time, hard work and effort.
-
-### Support
-
-For support, please use this repository's GitHub Issues tracking service, or join the Discord.
-
-Original portions of the software are Copyright (c) 2023 by respective contributors.
-
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install &quot;invokeai @ https://github.com/invoke-ai/InvokeAI/archive/refs/tags/v3.0.0&quot; --use-pep517 --upgrade
+invokeai-configure --root ." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><code>v3.0.0</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果本文档已过时，请替换为当前版本号）。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一个命令将安装和升级新软件以运行 InvokeAI。</font><font style="vertical-align: inherit;">第二个将准备 2.3 目录以供 3.0 使用。</font><font style="vertical-align: inherit;">您现在可以通过从启动器脚本中选择选项 [1] 以通常的方式启动 WebUI</font></font></p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-migrating-images" class="anchor" aria-hidden="true" tabindex="-1" href="#migrating-images"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迁移图像</font></font></h4>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迁移脚本将迁移您的invokeai 设置和模型，包括您之前可能安装的文本反演模型、LoRA 和合并。</font><font style="vertical-align: inherit;">但是，它不会</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迁移</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储在 2.3 格式输出目录中的生成图像。</font><font style="vertical-align: inherit;">为此，您需要运行额外的步骤：</font></font></p>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从工作的 InvokeAI 3.0 根目录中，启动启动器并输入菜单选项 [8] 以打开“开发人员控制台”。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在开发者控制台命令行中输入以下命令：</font></font></p>
+</li>
+</ol>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>invokeai-import-images</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="invokeai-import-images" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<ol start="3" dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这将引导您完成确认导入图像所需的源和目标的过程。</font><font style="vertical-align: inherit;">图像将出现在您选择的图库板中，并包含原始提示、模型名称和用于生成图像的其他参数。</font></font></li>
+</ol>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（非常感谢</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">techjedi</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献了这个脚本。）</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-hardware-requirements" class="anchor" aria-hidden="true" tabindex="-1" href="#hardware-requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">硬件要求</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux、Windows 和 macOS 均支持 InvokeAI。</font><font style="vertical-align: inherit;">Linux 用户可以使用基于 Nvidia 的卡（支持 CUDA）或 AMD 卡（使用 ROCm 驱动程序）。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-system" class="anchor" aria-hidden="true" tabindex="-1" href="#system"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">系统</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您将需要以下其中一项：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于 NVIDIA 的显卡，具有 4 GB 或更多 VRAM 内存。</font><font style="vertical-align: inherit;">强烈建议使用 Stable Diffusion XL 模型进行渲染时使用 6-8 GB VRAM</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配备 M1 芯片的 Apple 电脑。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于 AMD 的显卡，具有 4GB 或更多 VRAM 内存（仅限 Linux），6-8 GB 用于 XL 渲染。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们不推荐 GTX 1650 或 1660 系列显卡。</font><font style="vertical-align: inherit;">它们无法在半精度模式下运行，并且没有足够的 VRAM 来渲染 512x512 图像。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内存</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 至少 12 GB 主内存 RAM。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">磁盘</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 至少 12 GB 的可用磁盘空间用于机器学习模型、Python 及其所有依赖项。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-features" class="anchor" aria-hidden="true" tabindex="-1" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://invoke-ai.github.io/InvokeAI/features/" rel="nofollow"><font style="vertical-align: inherit;">可以通过导航到InvokeAI 文档页面</font></a><font style="vertical-align: inherit;">来查看功能文档</font></font><a href="https://invoke-ai.github.io/InvokeAI/features/" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-web-server--ui" class="anchor" aria-hidden="true" tabindex="-1" href="#web-server--ui"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络服务器和用户界面</font></font></em></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">InvokeAI 提供本地托管的 Web 服务器和 React 前端，具有行业领先的用户体验。</font><font style="vertical-align: inherit;">基于 Web 的 UI 可实现简单直观的工作流程，并且可在访问 Web 服务器的移动设备和平板电脑上进行响应。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-unified-canvas" class="anchor" aria-hidden="true" tabindex="-1" href="#unified-canvas"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">统一画布</font></font></em></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">统一画布是完全集成的画布实现，支持所有核心生成功能、内/外绘制、画笔工具等。</font><font style="vertical-align: inherit;">这一创意工具让艺术家能够作为创意合作者使用 AI 进行创作，并可用于增强 AI 生成的图像、草图、摄影、渲染等。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-workflows--nodes" class="anchor" aria-hidden="true" tabindex="-1" href="#workflows--nodes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作流程和节点</font></font></em></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">InvokeAI 提供功能齐全的工作流管理解决方案，使用户能够将基于节点的工作流的强大功能与简单的 UI 相结合。</font><font style="vertical-align: inherit;">这允许希望创建特定工作流程以支持其生产用例的用户开发和共享可定制的生成管道。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-board--gallery-management" class="anchor" aria-hidden="true" tabindex="-1" href="#board--gallery-management"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">董事会和画廊管理</font></font></em></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Invoke AI 提供了一个有组织的图库系统，可以轻松存储、访问和重新混合 Invoke 工作区中的内容。</font><font style="vertical-align: inherit;">图像可以拖/放到应用程序中任何基于图像的 UI 元素上，图像中丰富的元数据可以轻松调用工作流程中使用的关键提示或设置。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-other-features" class="anchor" aria-hidden="true" tabindex="-1" href="#other-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他特性</font></font></h3>
+<ul dir="auto">
+<li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持 ckpt 和扩散器模型</font></font></em></li>
+<li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SD 2.0、2.1、XL 支持</font></font></em></li>
+<li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升级工具</font></font></em></li>
+<li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">嵌入经理和支持</font></font></em></li>
+<li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模型经理和支持</font></font></em></li>
+<li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作流程创建和管理</font></font></em></li>
+<li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于节点的架构</font></font></em></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-latest-changes" class="anchor" aria-hidden="true" tabindex="-1" href="#latest-changes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最新变化</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关我们的最新更改，请查看我们的</font></font><a href="https://github.com/invoke-ai/InvokeAI/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发行说明</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和
+</font></font><a href="/invoke-ai/InvokeAI/blob/main/docs/CHANGELOG.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变更日志</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-troubleshooting" class="anchor" aria-hidden="true" tabindex="-1" href="#troubleshooting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">故障排除</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请查看我们的</font></font><strong><a href="https://invoke-ai.github.io/InvokeAI/installation/010_INSTALL_AUTOMATED/#troubleshooting" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">故障排除指南</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，获取常见安装问题和其他问题的解决方案。</font><font style="vertical-align: inherit;">如需更多帮助，请加入我们的</font></font><a href="https://discord.gg/ZmtBAhwWhy" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Discord</font></font></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-contributing" class="anchor" aria-hidden="true" tabindex="-1" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们非常鼓励任何希望为该项目做出贡献的人，无论是文档、功能、错误修复、代码清理、测试还是代码审查。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://invoke-ai.github.io/InvokeAI/contributing/CONTRIBUTING/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过阅读我们的贡献文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、加入</font></font><a href="https://discord.com/channels/1020123559063990373/1049495067846524939" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#dev-chat</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或 GitHub 讨论板</font><font style="vertical-align: inherit;">来开始贡献。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您不熟悉如何为 GitHub 项目做出贡献，我们有一个新的贡献者清单，您可以按照以下方式开始贡献：
+</font></font><a href="https://invoke-ai.github.io/InvokeAI/contributing/contribution_guides/newContributorChecklist/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新贡献者清单</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们希望您喜欢使用我们的软件，就像我们喜欢创建它一样，我们希望正在阅读本文的一些人会选择成为我们社区的一部分。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欢迎来到 InvokeAI！</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-contributors" class="anchor" aria-hidden="true" tabindex="-1" href="#contributors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这个叉子是来自世界各地的人们的共同努力。
+</font></font><a href="https://invoke-ai.github.io/InvokeAI/other/CONTRIBUTORS/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看所有这些了不起的人的名单</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">我们感谢他们付出的时间、辛勤工作和努力。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-support" class="anchor" aria-hidden="true" tabindex="-1" href="#support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如需支持，请使用此存储库的 GitHub 问题跟踪服务，或加入</font></font><a href="https://discord.gg/ZmtBAhwWhy" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Discord</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">软件的原始部分版权所有 (c) 2023，归各自贡献者所有。</font></font></p>
+</article></div>
